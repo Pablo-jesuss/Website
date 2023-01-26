@@ -1,0 +1,411 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+html,body{height:100%;}
+
+.center{
+	margin: 0 auto;
+	max-width: 1280px;
+	padding:0 2%; 
+}
+
+.clear{clear: both;}
+
+.layer{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 1;
+}
+
+section.main{
+	position: relative;
+	background-image: url(../images/bg1.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 15px 0;
+	width: 100%;
+	min-height: 800px;
+}
+
+section.main header{
+	position: relative;
+	z-index: 2;
+	padding-bottom: 10px;
+	border-bottom: 1px solid white;
+}
+
+.icons-social{
+	float: right;
+}
+
+.icons-social a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 0 15px;
+}
+
+.logo{
+	margin-top: 20px;
+	float: left;
+	font-size: 23px;
+	color: white;
+	font-weight: bold;
+}
+
+nav.mobile{
+	display: none;
+	float: right;
+}
+
+nav.mobile > i{
+	font-size: 25px;
+	color: #444;
+	cursor: pointer;
+	position: relative;
+	top: 23px;
+}
+
+nav.mobile ul{
+	z-index: 2;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 93px;
+	width: 100%;
+	background-color: #444;
+	list-style-type: none;
+}
+
+nav.mobile li{
+	font-weight: lighter;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	padding: 8px 0;
+}
+
+nav.mobile a{
+	text-decoration: none;
+	display: block;
+	color: white;
+}
+
+nav.mobile a:hover{
+	color: #2693FF;
+}
+
+nav.desktop{
+	float: right;
+	margin-top: 20px;
+}
+
+nav.desktop ul{
+	list-style-type: none;
+}
+
+nav.desktop li{
+	display: inline-block;
+	margin: 0 15px;
+	font-size: 17px;
+	font-weight: lighter;
+}
+
+nav.desktop a{
+	color: white;
+	text-decoration: none;
+}
+
+.conteudo-header{
+	margin: 110px 0;
+	max-width: 700px;
+	position: relative;
+	z-index: 1;
+}
+
+.conteudo-header h2{
+	font-size: 44px;
+	color: white;
+	font-weight: lighter;
+}
+
+.conteudo-header h2 > span{
+	color: #2692FF;
+}
+
+.conteudo-header p{
+	color: white;
+	margin-top: 18px;
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.conteudo-header a{
+	display: block;
+	width: 177px;
+	height: 44px;
+	background: #2693FF;
+	color: white;
+	text-align: center;
+	line-height: 44px;
+	text-decoration: none;
+	margin-top: 10px;
+	border-radius: 20px;
+}
+
+.chamada-planos{
+	width: 100%;
+	text-align: center;
+	padding: 25px 2%;
+	background: rgb(194, 186, 186);
+}
+
+.chamada-planos h2{
+	display: inline-block;
+	border-top: 2px solid #2692FF;
+	text-transform: uppercase;
+	color: #2692FF;
+	font-weight: lighter;
+	font-size: 25px;
+}
+
+.box-planos{
+	padding: 40px 0;
+}
+
+.box-planos > .center{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box-planos-single{
+	width: 33.3%;
+	padding: 0 40px;
+}
+
+.box-planos-wraper{
+	width: 100%;
+	min-height: 300px;
+	-webkit-box-shadow: 10px 9px 5px -8px rgba(0,0,0.75);
+	-moz-box-shadow: 10px 9px 5px -8px rgba(0,0,0.75);
+	box-shadow: 10px 9px 5px -8px rgba(0,0,0.75);
+	border: 1px solid #ccc;
+}
+
+.box-planos-single h2{
+	color: white;
+	background: #2693FF;
+	text-align: center;
+	padding: 3px;
+	font-weight: lighter;
+}
+
+.pontos-planos{
+	padding: 8px 0 15px 0px;
+}
+
+.preco{
+	margin-top: 10px;
+	padding: 15px 0;
+	text-align: center;
+}
+
+.preco h2{
+	font-size: 24px;
+	color: #777;
+	padding: 0 20px;
+	background-color: transparent;
+	display: inline-block;
+	border-top: 1px solid #ccc;
+}
+
+.box-planos-single p{
+	font-size: 17px;
+	color: #777777;
+	margin-top: 8px;
+	margin-left: 20px;
+}
+
+section.parallax{
+	position: relative;
+	width: 100%;
+	padding: 40px;
+	min-height: 300px;
+	background-image: url('../images/fundo.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+section.parallax > .center{
+	position: relative;
+	max-width: 960px;
+	z-index: 2;
+	color: white;
+}
+
+section.parallax h2{
+	text-align: center;
+}
+section.parallax p{
+	margin-top: 15px;
+}
+
+.overlay-parallax{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: rgba(20,20,20,0.6);
+	z-index: 1;
+}
+
+section.final-section{
+	padding: 30px 0;
+}
+
+.w50{
+	float: left;
+	width: 50%;
+	padding: 0 20px;
+	margin: 30px 0;
+}
+
+
+section.final-section h2{
+	font-weight: lighter;
+	color: #777777;
+	font-size: 24px;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+section.final-section h2 > .borda-efeito{
+	width: 58px;
+	height: 3px;
+	background-color: #777;
+	position: absolute;
+	transition: 0.4s;
+}
+
+section.final-section h2:hover > .borda-efeito{
+	width: 50%;
+}
+
+.contato form{
+	margin-top: 15px;
+}
+
+.contato input:not([type=submit]){
+	width: 100%;
+	height: 40px;
+	display: block;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	margin-top: 10px;
+}
+
+.contato textarea{
+	font-size: 15px;
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	padding: 8px;
+	resize: vertical;
+}
+
+.contato input[type=submit]{
+	cursor: pointer;
+	background: #2693FF;
+	color: white;
+	border: 0;
+	width: 100px;
+	height: 33px;
+	border-radius: 30px;
+	margin-top: 15px;
+}
+
+.time > .w50{
+	width: 48%;
+	margin: 0 1%;
+}
+
+.equipe-single{
+	border: 1px solid #ccc;
+	min-height: 240px;
+	padding: 10px 8px;
+	padding-bottom: 30px;
+	-webkit-box-shadow: 10px 9px 5px -8px rgba(0,0,0.75);
+	-moz-box-shadow: 10px 9px 5px -8px rgba(0,0,0.75);
+	box-shadow: 10px 9px 5px -8px rgba(0,0,0.75);
+}
+
+.topo-box-usuario{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+.box-avatar{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #ccc;
+	background-image: url(../images/pessoas.jpg);
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+
+.info-usuario{
+	display: inline-block;
+	vertical-align: middle;
+	color: #777;
+	padding-left: 8px;
+}
+
+.descricao-usuario-box{
+	color: #999999;
+	font-weight: lighter;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+footer{
+	background-color: rgb(43, 42, 42);
+}
+
+footer p{
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	padding: 30px;
+}
+
+@media screen and (max-width: 768px){
+	nav.mobile{
+		display: block;
+	}
+	nav.desktop{
+		display: none;
+	}
+	.w50{
+		width: 100%;
+	}
+	.time > .w50{
+		width: 100%;
+		margin:15px 0;
+	}
+	.box-planos-single{
+		width: 100%;
+		margin: 10px 0;
+	}
+}
